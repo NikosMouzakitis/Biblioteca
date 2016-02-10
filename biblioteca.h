@@ -1,6 +1,8 @@
 #ifndef BIBLIOTECA_H_INCLUDED
 #define BIBLIOTECA_H_INCLUDED
 
+#include <math.h>
+
 int bi_abs (int a)
 {
     if (a < 0)
