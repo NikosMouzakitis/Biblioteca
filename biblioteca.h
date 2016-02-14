@@ -3,6 +3,32 @@
 
 #include <math.h>
 
+int isPrime(int n) // if n prime returns value of n,else returns zero(0)
+{
+   int i, count = 0;
+
+   for(i = 2; i < n; i++)
+
+      if(n % i )
+        count += 1;
+   if(count == n - 2)
+        return (n);
+   else
+    return (0) ;
+}
+
+int combo1(int p1,int p2) // checks out if the sum of two integers(primes preferable) minus 1 is a prime.
+{
+
+    int sum= p1 + p2 - 1 ;
+    int i;
+    if(isPrime(sum))
+        return (1) ;
+    else
+        return (0) ;
+
+}
+
 int bi_abs (int a)
 {
     if (a < 0)
